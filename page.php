@@ -1,6 +1,8 @@
 ﻿<?
 class Page{
-	
+	public $header = "HEADER";
+	public $content;
+	public $footer;
 }
 $index = new Page();
 
