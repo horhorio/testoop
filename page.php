@@ -4,6 +4,10 @@ class Page{
 	public $content;
 	public $footer;
 	
+	function __construct(){
+		echo "Прет";
+	}
+	
 	public function view_header(){
 		echo $this->header;	
 	}
@@ -18,5 +22,3 @@ $admin = new Page();
 
 $view = new Page();
 ?>
-
-метро московское московское шоссе 25 -*/бц пристиж, паспорт 6 этаж 609 офис, ольга 6779370 , автобус к-3
