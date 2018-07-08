@@ -4,21 +4,19 @@ class Page{
 	public $content;
 	public $footer;
 	
-	function __construct(){
-		echo "Прет";
+	function __construct($shapka,$text){
+		$this->header = $shapka;
+		$this->content = $text; 
 	}
 	
 	public function view_header(){
 		echo $this->header;	
 	}
 	public function foo(){
-		echo $this->view_header();	
+		echo $this->view_header($var, $var2);	
 	}
 }
-$index = new Page();
-//echo $index->header;
-echo $index->foo();
-$admin = new Page();
-
-$view = new Page();
+$index = new Page('INDEX11','TEXT');
+echo $index->header;
+echo $index->content;
 ?>
